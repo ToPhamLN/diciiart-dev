@@ -1,0 +1,151 @@
+.main_page {
+    position: relative;
+    height: calc(100vh -50px);
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    align-self: center;
+    max-height: 100%;
+    color: var(--text-color);
+}
+
+.poster {
+    flex: 1;
+    margin-right: 20px;
+    height: calc(100vh -50px - 20px);
+    min-height: calc(100vh -50px - 20px);
+}
+
+.poster img {
+    display: block;
+    height: 100%;
+    width: auto;
+    border: 2px solid #555;
+    border-radius: 10px;
+    background-blend-mode: darken;
+
+}
+
+#login_form {
+    flex: 1;
+    background-color: var(--first-bgd-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 500px;
+    position: relative;
+}
+
+
+#login_form h1 {
+    font-size: 28px;
+    margin: 10px 0 20px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+#login_form h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-style: italic;
+}
+
+#login_form #input_box {
+    margin: 10px 0;
+    background: var(--background-color);
+    width: 100%;
+    max-width: 500px;
+    border-radius: 5px;
+    border: 2px solid var(--text-color);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+#login_form #input_box input {
+    width: 100%;
+    padding: 10px 0;
+    background-color: var(--background-color);
+    border: 0;
+    outline: 0;
+    font-size: 15px;
+    color: var(--text-color);
+
+}
+
+#login_form span#switch_pwd {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#login_form .option {
+    position: relative;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+#login_form .option .left {
+    display: flex;
+    justify-content: center;
+}
+
+.option input {
+    margin-right: 10px;
+
+}
+
+#login_form .option a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+
+
+#login_form button {
+    margin: 10px 0;
+    width: 100%;
+    background-color: #007bff;
+    color: var(--text-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+#login_form p {
+    font-size: 18px;
+    bottom: 15%;
+}
+
+#login_form .signup_link {
+    margin: 15px;
+    margin-bottom: 120px;
+}
+
+#login_form .signup_link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#login_form .footer {
+    font-size: 12px;
+}
+
+#login_form .footer a {
+    color: rgb(119, 24, 143);
+    font-weight: bold;
+    text-decoration: none;
+}

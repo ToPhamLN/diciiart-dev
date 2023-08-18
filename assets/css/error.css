@@ -1,0 +1,34 @@
+#err_form {
+    display: none;
+}
+
+.err_wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.err_message {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.err_icon {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.err_text {
+    margin: 0;
+}

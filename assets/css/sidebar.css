@@ -1,0 +1,106 @@
+#sidebar {
+    width: 200px;
+    height: 100vh;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    position: fixed;
+    border: 1px solid #555;
+    box-sizing: border-box;
+    top: 50px;
+    left: -200px;
+    transition: left 0.3s ease-in-out;
+    z-index: 2;
+}
+
+.search_sidebar {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 5px 0;
+    background: var(--background-color);
+    position: relative;
+}
+
+.search_sidebar input {
+    flex: 1;
+    width: 100%;
+    background-color: var(--background-color);
+    border: none;
+    outline: none;
+
+}
+
+.search_sidebar input[type="text"] {
+    transform: translateX(8px);
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.search_sidebar button {
+
+    border: none;
+    outline: none;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    cursor: pointer;
+    transform: translateX(-4px);
+
+    &:hover {
+        transform: translate(-4px, -1px);
+    }
+
+}
+
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#sidebar ul li {
+    margin-bottom: 10px;
+}
+
+#sidebar a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: var(--text-color);
+    font-weight: 400;
+    text-decoration: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Underline effect on hover */
+#sidebar a::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 2px;
+    background: var(--text-color);
+    transition: 0.3s ease;
+}
+
+#sidebar a:hover::before {
+    width: 100%;
+}
+
+/* Sidebar Icons */
+#sidebar a span {
+    margin-right: 10px;
+}
+
+/* Add hover effect */
+#sidebar a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Make active link stand out */
+#sidebar a.active {
+    background-color: rgba(0, 0, 0, 0.2);
+}

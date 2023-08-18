@@ -1,0 +1,215 @@
+/* Navigation bar */
+#navbar {
+    height: 50px;
+    width: 100%;
+    background: var(--primary-color);
+    position: fixed;
+    color: var(--text-color);
+    top: 0;
+    left: 0;
+    padding: 0;
+    border: 1px solid #555;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+#navbar .nav_tab {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo and Navigation Items */
+#navbar .logo_nav {
+    margin: 0;
+    display: flex;
+}
+
+.logo_nav ul,
+.auth_nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#toggle_sidebar {
+    margin: 10px;
+    color: var(--text-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+    border-radius: 3px;
+}
+
+.logo_nav img {
+    width: auto;
+    height: 50px;
+}
+
+/* Search Box Container */
+.search_container {
+    margin: 5px 30px 0 10px;
+}
+
+.search-box {
+    transition: width 0.6s, border-radius 0.6s, background 0.6s, box-shadow 0.6s;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background: var(--background-color);
+}
+
+#search-submit {
+    display: none;
+}
+
+#search_icon {
+    position: relative;
+    left: -35px;
+    top: 8px;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.search-box:hover {
+    color: var(--text-hover);
+    background: var(--background-hover);
+    box-shadow: 0 0 0 5px rgb(228, 228, 228);
+}
+
+.search-box:hover+label .search-icon {
+    color: var(--text-hover)
+}
+
+.search-box:focus {
+    transition: width 0.6s cubic-bezier(0, 1.22, .66, 1.39), border-radius 0.6s, background 0.6s;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding-left: 15px;
+    cursor: text;
+    width: 300px;
+    border-radius: auto;
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+.search-box:focus+label .search-icon {
+    color: var(--text-hover);
+}
+
+.search-box:not(:focus) {
+    text-indent: -5000px;
+}
+
+.auth_nav {
+    margin: 0 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.auth_nav #user ul {
+    display: flex;
+    align-items: center;
+}
+
+#side ul,
+#user ul {
+    list-style: none;
+}
+
+#side ul li,
+#user ul li {
+    margin: 0 0 0 10px;
+}
+
+#user ul li a.item_nav {
+    position: relative;
+    text-decoration: none;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: background-color 0.3 ease-in-out;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+}
+
+#user ul li a.item_nav::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 2px;
+    background-color: var(--text-color);
+    transition: all 0.3s ease-in-out;
+
+}
+
+#user ul li a.item_nav::after {
+    display: none;
+    content: attr(icon_name);
+    position: absolute;
+    font-size: 15px;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    white-space: nowrap;
+    color: var(--text-color);
+    background: var(--background-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #555;
+}
+
+#user ul li a:hover::before {
+    width: 100%;
+}
+
+#user ul li a:hover::after {
+    display: block;
+}
+
+#user ul li:nth-child(8) img {
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+
+#user ul li:nth-child(8) img:hover {
+    transform: scale(1.2);
+    border: 3px solid var(--text-color);
+}
+
+#side li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--text-color);
+    padding: 3px 20px;
+    box-sizing: border-box;
+    background-color: #3b0edb;
+    border: 1px solid #000552;
+    border-radius: 5px;
+}
+
+#side li:first-child a {
+    background-color: var(--background-color);
+}
+
+#side li a:hover {
+    transform: scale(1.2);
+}
+
+#navbar .item_nav:hover {
+    transform: scale(1.1);
+    background-color: #020c9e25;
+}
