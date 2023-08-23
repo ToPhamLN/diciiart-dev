@@ -1,10 +1,9 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home|DiciiArt</title>
+    <title>Home | DiciiArt</title>
     <link rel="icon" href="./../assets/imgs/logo.png">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
@@ -13,8 +12,8 @@
 </head>
 
 <body>
-    <?php require_once('./../components/Navbar.php');?>
-    <?php require_once('./../components/Sidebar.php');?>
+    <?php require_once('./../components/Navbar.php'); ?>
+    <?php require_once('./../components/Sidebar.php'); ?>
 
     <main class="main_page">
         <div class="container">
@@ -111,7 +110,7 @@
                 <div class="wrapper">
                     <article class="author_info">
                         <div class="author">
-                            <img class="avatar" src="../../public/imgs/avatar.jpg" alt="">
+                            <img class="avatar" src="./../assets/imgs/avatar.jpg" alt="">
                             <span class="name">WeezyE14</span>
                         </div>
                         <img class="coverphoto" src="./../assets/imgs/demo11.jpg" alt="">
@@ -156,10 +155,11 @@
 
     </main>
 
-    <?php require_once('./../components/Footer.php');?>
-    <?php require_once('./../components/Error.php');?>
+    <?php require_once('./../components/Footer.php'); ?>
+    <?php require_once('./../components/Confirm.php'); ?>
 
     <script src="./../assets/javascripts/isLogin.js"></script>
+    <script src="./../assets/javascripts/toggleLogout.js"></script>
     <script src='./../assets/javascripts/toggleSidebar.js'></script>
     <script src='./../assets/javascripts/toggleMorlist.js'></script>
     <script src='./../assets/javascripts/theme.js'></script>

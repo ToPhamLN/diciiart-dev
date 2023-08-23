@@ -1,0 +1,277 @@
+.main_page {
+    position: relative;
+    top: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    filter: none;
+}
+
+.main_page .container {
+    margin: 20px 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* group list */
+.main_page .group_list {
+    position: relative;
+    width: 59%;
+}
+
+.ppl_group_wp {
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+}
+
+.ppl_group_wp .card:nth-child(n+11) {
+    opacity: 0;
+}
+
+.ppl_group .card {
+    margin-bottom: 30px;
+    position: relative;
+    width: 350px;
+    aspect-ratio: 16/9;
+    background-color: var(--background-color);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #ffffff80;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.ppl_group .card img {
+    width: 350px;
+    height: 100%;
+    background-size: cover;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.ppl_group .card__image {
+    width: 100%;
+    height: 100%;
+}
+
+.ppl_group .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.ppl_group .card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: var(--first-bgd-color);
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.ppl_group .card:hover .card__content {
+    transform: rotateX(0deg);
+}
+
+.ppl_group .card__title {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+    font-weight: 700;
+}
+
+.ppl_group .card:hover img {
+    scale: 0;
+}
+
+.ppl_group .card__description {
+    margin: 10px 0 10px;
+    font-size: 12px;
+    color: #777;
+    line-height: 1.4;
+}
+
+.ppl_group .watch_btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+    padding: 15px 30px;
+    border-radius: 8px;
+    background: #777;
+    border: none;
+    color: white;
+}
+
+.ppl_group .watch_btn a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.ppl_group .join_btn {
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+    padding: 15px 30px;
+    background: transparent;
+    color: #777;
+    border: 1px solid #777;
+}
+
+.control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.control button {
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+/* more view */
+.main_page .more_view {
+    width: 450px;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: #2563EB;
+
+}
+
+/* more view */
+.more_view #toggle_cr_group {
+    margin: 0 0 20px 0;
+    padding: 3px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    background-color: var(--btn-color);
+    cursor: pointer;
+
+}
+
+.more_view #toggle_cr_group:hover {
+    transform: translateY(-5px);
+}
+
+#toggle_cr_group span {
+    margin-right: 10px;
+}
+
+.category {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.my_group_wp,
+.rcmd_gr_wp {
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.my_group .card {
+    margin-bottom: 10px;
+    max-width: 200px;
+    border-radius: 0.5rem;
+    background-color: var(--first-bgd-color);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid transparent;
+}
+
+.my_group .card a {
+    text-decoration: none
+}
+
+.my_group .content {
+    padding: 1.1rem;
+}
+
+.my_group .image {
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
+    background-color: rgb(239, 205, 255);
+}
+
+.my_group .title {
+    color: var(--text-color);
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+}
+
+
+
+.my_group .action {
+    display: inline-flex;
+    margin-top: 1rem;
+    color: var(--text-color);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    align-items: center;
+    gap: 0.25rem;
+    background-color: #2563EB;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.my_group .action span {
+    transition: .3s ease;
+}
+
+.my_group .action:hover span {
+    transform: translateX(4px);
+}
+
+.rcmd_gr_wp .card {
+    margin-bottom: 10px;
+    width: 200px;
+    background: var(--first-bgd-color);
+    padding: .4em;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.rcmd_gr_wp .card_image {
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    height: 150px;
+    border-radius: 6px 6px 0 0;
+}
+
+.rcmd_gr_wp .card_image:hover {
+    transform: scale(0.98);
+}
+
+.rcmd_gr_wp .title {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    /* line-height: 12; */
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.rcmd_gr_wp .title:hover {
+    cursor: pointer;
+}

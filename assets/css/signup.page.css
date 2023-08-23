@@ -81,6 +81,8 @@
 
 }
 
+
+
 #signup_form span#switch_pwd {
     cursor: pointer;
     font-weight: 600;
@@ -115,4 +117,10 @@
 #signup_form .footer {
     font-size: 12px;
 
+}
+
+#signup_form .footer a {
+    color: rgb(119, 24, 143);
+    font-weight: bold;
+    text-decoration: none;
 }

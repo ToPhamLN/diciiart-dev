@@ -19,7 +19,7 @@
             <a href="./../pages/Home.php">
                 <img src="./../assets/imgs/logo.png" alt="">
             </a>
-            <form class="search_container" action="">
+            <form class="search_nav" action="">
                 <input id="search_box" type="text" class="search-box" name="q" />
                 <label for="search_box">
                     <span id="search_icon" class="material-symbols-outlined">
@@ -37,14 +37,14 @@
 
                 <ul>
                     <li>
-                        <a class="item_nav" href="#" icon_name="Feed">
+                        <a class="item_nav" href="./../pages/Home.php?feed" icon_name="Feed">
                             <span class="material-symbols-outlined">
                                 whatshot
                             </span>
                         </a>
                     </li>
                     <li>
-                        <a class="item_nav" href="#" icon_name="Hot">
+                        <a class="item_nav" href="./../pages/Home.php?hot" icon_name="Hot">
                             <span class="material-symbols-outlined">
                                 local_fire_department
                             </span>
@@ -58,7 +58,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="item_nav" href="#" icon_name="Group">
+                        <a class="item_nav" href="./Group.php" icon_name="Group">
                             <span class="material-symbols-outlined">
                                 thermostat_carbon
                             </span>
@@ -87,7 +87,7 @@
                     </li>
 
                     <li>
-                        <a href="#" icon_name="My Info">
+                        <a href="./Userinfo.php" icon_name="My Info">
                             <img src="./../assets/imgs/avatar.jpg" alt="Avatar">
 
                         </a>
@@ -105,7 +105,7 @@
                     <div class="space"></div>
                     <ul>
                         <li>
-                            <a href="3">
+                            <a href="#">
                                 <span class="material-symbols-outlined">
                                     settings
                                 </span>
@@ -113,15 +113,15 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="./Userinfo.php">
                                 <span class="material-symbols-outlined">
                                     account_circle
                                 </span>
-                                My infomation
+                                My Info
                             </a>
                         </li>
                         <li>
-                            <a href="3">
+                            <a href="#">
                                 <span class="material-symbols-outlined">
                                     bookmarks
                                 </span>
@@ -145,7 +145,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a id="toggle_logout_btn">
                                 <span class="material-symbols-outlined">
                                     logout
                                 </span>

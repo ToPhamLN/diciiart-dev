@@ -1,42 +1,77 @@
-const errForm = document.getElementById('err_form');
-const errText = document.querySelector('.err_text');
+const confirmCtn = document.getElementById('confirm');
+const confirmTitle = document.querySelector('.confirm_title');
+const confirmText = document.querySelector('.confirm_text');
 const signupForm = document.getElementById('signup_form');
-
 const switchPwdElement = document.querySelectorAll('#switch_pwd');
 
-//is login Set in navbar
+const userNameWp = document.querySelector('.username_wp');
+const emailWp = document.querySelector('.email_wp');
+const passwordWp = document.querySelector('.password_wp');
+const passwordAgainWp = document.querySelector('.password_again_wp');
 
+console.log(userNameWp, passwordWp, passwordAgainWp, emailWp);
 
 //event form sign up 
-function checkErrorValue(inputValue) {
-    if (inputValue === "") {
+function checkErrorValue(inputValue, minLength, maxLength) {
+    if (inputValue === "" || inputValue.length < minLength || inputValue.length > maxLength) {
         return true;
     }
     return false;
 }
 
+function checkEmailFormat(email) {
+    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    return emailPattern.test(email);
+}
+
+function showConfirm(a, b) {
+    confirmCtn.style.display = 'block';
+    confirmTitle.textContent = a;
+    confirmText.textContent = b;
+}
+
 signupForm.addEventListener('submit', function (e) {
     e.preventDefault();
-    const userName = document.getElementById('user-name').value;
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-    const passwordAgain = document.getElementById('password-again').value;
+    const userName = document.getElementById('username');
+    const email = document.getElementById('email');
+    const password = document.getElementById('password');
+    const passwordAgain = document.getElementById('password-again');
 
-    const userNameError = checkErrorValue(userName);
-    const emailError = checkErrorValue(email);
-    const passwordError = checkErrorValue(password);
-    const passwordAgainError = checkErrorValue(passwordAgain);
-    const duplicatePasswordError = password != passwordAgain;
+    const userNameError = checkErrorValue(userName.value, 8, 16);
+    const emailError = checkErrorValue(email.value, 1, Infinity) || !checkEmailFormat(email.value);
+    const passwordError = checkErrorValue(password.value, 8, 16);
+    const passwordAgainError = checkErrorValue(passwordAgain.value, 8, 16);
+    const duplicatePasswordError = password.value !== passwordAgain.value;
+
+    if (userNameError) {
+        userNameWp.style.borderColor = 'yellow';
+    } else {
+        userNameWp.style.borderColor = 'initial';
+    }
+
+    if (emailError) {
+        emailWp.style.borderColor = 'yellow';
+    } else {
+        emailWp.style.borderColor = 'initial';
+    }
+
+    if (passwordError) {
+        passwordWp.style.borderColor = 'yellow';
+    } else {
+        passwordWp.style.borderColor = 'initial';
+    }
+
+    if (passwordAgainError || duplicatePasswordError) {
+        passwordAgainWp.style.borderColor = 'yellow';
+    } else {
+        passwordAgainWp.style.borderColor = 'initial';
+    }
 
     if (userNameError || emailError || passwordError || passwordAgainError || duplicatePasswordError) {
-        errForm.style.display = 'block';
-        errText.textContent = "Please complete all information!";
-        if (duplicatePasswordError) {
-            errText.textContent = "Please check your password again!"
-        }
+        showConfirm('Error', 'Please complete correctly!');
     } else {
-        errForm.style.display = 'none';
-        console.log(userName, email, password, passwordAgain)
+        confirmCtn.style.display = 'none';
+        signupForm.submit();
     }
 });
 
@@ -48,22 +83,20 @@ switchPwdElement.forEach(switchPwd => {
         passwordFields.forEach(item => {
             if (item.type === 'password') {
                 item.setAttribute('type', 'text');
+                switchPwdElement.forEach(switchPwdElement => {
+                    switchPwdElement.textContent = "visibility";
+                });
             } else {
                 item.setAttribute('type', 'password');
+                switchPwdElement.forEach(switchPwdElement => {
+                    switchPwdElement.textContent = "visibility_off";
+                })
             }
         });
     });
 });
 
-
 //exit error message
-errForm.addEventListener('click', function () {
-    errForm.style.display = 'none';
-})
-
-
-
-
-
-
-
+confirmCtn.addEventListener('click', function () {
+    confirmCtn.style.display = 'none';
+});

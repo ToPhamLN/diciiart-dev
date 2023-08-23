@@ -1,10 +1,9 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home|DiciiArt</title>
+    <title>Home | DiciiArt</title>
     <link rel="icon" href="./../assets/imgs/logo.png">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
@@ -13,8 +12,8 @@
 </head>
 
 <body>
-    <?php require_once('./../components/Navbar.php');?>
-    <?php require_once('./../components/Sidebar.php');?>
+    <?php require_once('./../components/Navbar.php'); ?>
+    <?php require_once('./../components/Sidebar.php'); ?>
 
     <main class="main_page">
         <div class="container">
@@ -32,7 +31,7 @@
                         </div>
                         <div class="bottom-left">
                             <div class="author">
-                                <img class="avatar" src="../../public/imgs/avatar.jpg" alt="">
+                                <img class="avatar" src="./../assets/imgs/avatar.jpg" alt="">
                                 <span class="name">WeezyE14</span>
                             </div>
                         </div>
@@ -62,7 +61,7 @@
                         </div>
                         <div class="bottom-left">
                             <div class="author">
-                                <img class="avatar" src="../../public/imgs/avatar.jpg" alt="">
+                                <img class="avatar" src="./../assets/imgs/avatar.jpg" alt="">
                                 <span class="name">WeezyE14</span>
                             </div>
                         </div>
@@ -91,7 +90,7 @@
                         </div>
                         <div class="bottom-left">
                             <div class="author">
-                                <img class="avatar" src="../../public/imgs/avatar.jpg" alt="">
+                                <img class="avatar" src="./../assets/imgs/avatar.jpg" alt="">
                                 <span class="name">WeezyE14</span>
                             </div>
                         </div>
@@ -120,7 +119,7 @@
                         </div>
                         <div class="bottom-left">
                             <div class="author">
-                                <img class="avatar" src="../../public/imgs/avatar.jpg" alt="">
+                                <img class="avatar" src="./../assets/imgs/avatar.jpg" alt="">
                                 <span class="name">WeezyE14</span>
                             </div>
                         </div>
@@ -149,7 +148,7 @@
                         </div>
                         <div class="bottom-left">
                             <div class="author">
-                                <img class="avatar" src="../../public/imgs/avatar.jpg" alt="">
+                                <img class="avatar" src="./../assets/imgs/avatar.jpg" alt="">
                                 <span class="name">WeezyE14</span>
                             </div>
                         </div>
@@ -178,7 +177,7 @@
                         </div>
                         <div class="bottom-left">
                             <div class="author">
-                                <img class="avatar" src="../../public/imgs/avatar.jpg" alt="">
+                                <img class="avatar" src="./../assets/imgs/avatar.jpg" alt="">
                                 <span class="name">WeezyE14</span>
                             </div>
                         </div>
@@ -207,7 +206,7 @@
                         </div>
                         <div class="bottom-left">
                             <div class="author">
-                                <img class="avatar" src="../../public/imgs/avatar.jpg" alt="">
+                                <img class="avatar" src="./../assets/imgs/avatar.jpg" alt="">
                                 <span class="name">WeezyE14</span>
                             </div>
                         </div>
@@ -236,7 +235,7 @@
                         </div>
                         <div class="bottom-left">
                             <div class="author">
-                                <img class="avatar" src="../../public/imgs/avatar.jpg" alt="">
+                                <img class="avatar" src="./../assets/imgs/avatar.jpg" alt="">
                                 <span class="name">WeezyE14</span>
                             </div>
                         </div>
@@ -265,7 +264,7 @@
                         </div>
                         <div class="bottom-left">
                             <div class="author">
-                                <img class="avatar" src="../../public/imgs/avatar.jpg" alt="">
+                                <img class="avatar" src="./../assets/imgs/avatar.jpg" alt="">
                                 <span class="name">WeezyE14</span>
                             </div>
                         </div>
@@ -294,7 +293,7 @@
                         </div>
                         <div class="bottom-left">
                             <div class="author">
-                                <img class="avatar" src="../../public/imgs/avatar.jpg" alt="">
+                                <img class="avatar" src="./../assets/imgs/avatar.jpg" alt="">
                                 <span class="name">WeezyE14</span>
                             </div>
                         </div>
@@ -324,7 +323,124 @@
                         </div>
                         <div class="bottom-left">
                             <div class="author">
-                                <img class="avatar" src="../../public/imgs/avatar.jpg" alt="">
+                                <img class="avatar" src="./../assets/imgs/avatar.jpg" alt="">
+                                <span class="name">WeezyE14</span>
+                            </div>
+                        </div>
+                        <div class="bottom-right">
+                            <div class="favour">
+                                <span class="text">11.1N</span>
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="card">
+                <img class="card_img" src="./../assets/imgs/demo1.png" alt="">
+                <figcaption class="card_body">
+                    <div class="wrapper">
+                        <div class="top-left">
+                            <span class="img_title truncate">Artic Ice Fall</span>
+                        </div>
+                        <div class="top-right">
+                            <span class="material-symbols-outlined">
+                                more_horiz
+                            </span>
+                        </div>
+                        <div class="bottom-left">
+                            <div class="author">
+                                <img class="avatar" src="./../assets/imgs/avatar.jpg" alt="">
+                                <span class="name">WeezyE14</span>
+                            </div>
+                        </div>
+                        <div class="bottom-right">
+                            <div class="favour">
+                                <span class="text">11.1N</span>
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="card">
+                <img class="card_img" src="./../assets/imgs/demo1.png" alt="">
+                <figcaption class="card_body">
+                    <div class="wrapper">
+                        <div class="top-left">
+                            <span class="img_title truncate">Artic Ice Fall</span>
+                        </div>
+                        <div class="top-right">
+                            <span class="material-symbols-outlined">
+                                more_horiz
+                            </span>
+                        </div>
+                        <div class="bottom-left">
+                            <div class="author">
+                                <img class="avatar" src="./../assets/imgs/avatar.jpg" alt="">
+                                <span class="name">WeezyE14</span>
+                            </div>
+                        </div>
+                        <div class="bottom-right">
+                            <div class="favour">
+                                <span class="text">11.1N</span>
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="card">
+                <img class="card_img" src="./../assets/imgs/demo1.png" alt="">
+                <figcaption class="card_body">
+                    <div class="wrapper">
+                        <div class="top-left">
+                            <span class="img_title truncate">Artic Ice Fall</span>
+                        </div>
+                        <div class="top-right">
+                            <span class="material-symbols-outlined">
+                                more_horiz
+                            </span>
+                        </div>
+                        <div class="bottom-left">
+                            <div class="author">
+                                <img class="avatar" src="./../assets/imgs/avatar.jpg" alt="">
+                                <span class="name">WeezyE14</span>
+                            </div>
+                        </div>
+                        <div class="bottom-right">
+                            <div class="favour">
+                                <span class="text">11.1N</span>
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </figcaption>
+            </figure>
+
+            <figure class="card">
+                <img class="card_img" src="./../assets/imgs/demo1.png" alt="">
+                <figcaption class="card_body">
+                    <div class="wrapper">
+                        <div class="top-left">
+                            <span class="img_title truncate">Artic Ice Fall</span>
+                        </div>
+                        <div class="top-right">
+                            <span class="material-symbols-outlined">
+                                more_horiz
+                            </span>
+                        </div>
+                        <div class="bottom-left">
+                            <div class="author">
+                                <img class="avatar" src="./../assets/imgs/avatar.jpg" alt="">
                                 <span class="name">WeezyE14</span>
                             </div>
                         </div>
@@ -342,10 +458,11 @@
         </div>
     </main>
 
-    <?php require_once('./../components/Footer.php');?>
-    <?php require_once('./../components/Error.php');?>
+    <?php require_once('./../components/Footer.php'); ?>
+    <?php require_once('./../components/Confirm.php'); ?>
 
     <script src="./../assets/javascripts/isLogin.js"></script>
+    <script src="./../assets/javascripts/toggleLogout.js"></script>
     <script src='./../assets/javascripts/toggleSidebar.js'></script>
     <script src='./../assets/javascripts/toggleMorlist.js'></script>
     <script src='./../assets/javascripts/theme.js'></script>

@@ -12,7 +12,8 @@ function applyTheme() {
         root.style.setProperty('--text-hover', '#1d1d1d');
         root.style.setProperty('--first-bgd-color', '#f2e7ed');
         root.style.setProperty('--second-bgd-color', '#A9BDFF');
-        root.style.setProperty('--btn-color', '#1E4279');
+        root.style.setProperty('--third-bgd-color', '#5180C8');
+        root.style.setProperty('--btn-color', '#7577FF');
     } else {
         root.style.setProperty('--primary-color', '#377da8');
         root.style.setProperty('--background-color', '#242424');
@@ -20,6 +21,7 @@ function applyTheme() {
         root.style.setProperty('--text-hover', '#ffffff');
         root.style.setProperty('--first-bgd-color', '#0F161D');
         root.style.setProperty('--second-bgd-color', '#3f4444');
+        root.style.setProperty('--third-bgd-color', '#181D3A');
         root.style.setProperty('--btn-color', '#3b4e4e');
 
 

@@ -1,10 +1,9 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create|DiciiArt</title>
+    <title>Create | DiciiArt</title>
     <link rel="icon" href="./../assets/imgs/logo.png">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
@@ -13,8 +12,8 @@
 </head>
 
 <body>
-    <?php require_once('./../components/Navbar.php');?>
-    <?php require_once('./../components/Sidebar.php');?>
+    <?php require_once('./../components/Navbar.php'); ?>
+    <?php require_once('./../components/Sidebar.php'); ?>
 
     <main class="main_page">
         <div class="container">
@@ -41,10 +40,11 @@
         </div>
     </main>
 
-    <?php require_once('./../components/Footer.php');?>
-    <?php require_once('./../components/Error.php');?>
+    <?php require_once('./../components/Footer.php'); ?>
+    <?php require_once('./../components/Confirm.php'); ?>
 
     <script src="./../assets/javascripts/isLogin.js"></script>
+    <script src="./../assets/javascripts/toggleLogout.js"></script>
     <script src='./../assets/javascripts/toggleSidebar.js'></script>
     <script src='./../assets/javascripts/toggleMorlist.js'></script>
     <script src='./../assets/javascripts/theme.js'></script>

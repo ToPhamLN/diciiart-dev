@@ -30,7 +30,7 @@
             </li>
 
             <li>
-                <a href="#">
+                <a href="./../pages/Home.php?feed">
                     <span class="material-symbols-outlined">
                         whatshot
                     </span>
@@ -38,7 +38,7 @@
                 </a>
             </li>
             <li>
-                <a class="item_nav" href="#" icon_name="Hot">
+                <a class="item_nav" href="./../pages/Home.php?hot" icon_name="Hot">
                     <span class="material-symbols-outlined">
                         local_fire_department
                     </span>
@@ -46,7 +46,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="./../pages/Home.php">
                     <span class="material-symbols-outlined">
                         bookmark
                     </span>
@@ -54,7 +54,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="./Group.php">
                     <span class="material-symbols-outlined">
                         thermostat_carbon
                     </span>

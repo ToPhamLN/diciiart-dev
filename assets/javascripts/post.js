@@ -1,5 +1,6 @@
-const errForm = document.getElementById('err_form');
-const errText = document.querySelector('.err_text');
+const confirmCtn = document.getElementById('confirm');
+const confirmTitle = document.querySelector('.confirm_title');
+const confirmText = document.querySelector('.confirm_text');
 const postForm = document.getElementById('post_form');
 
 // event form post NFT
@@ -37,17 +38,18 @@ postForm.addEventListener('submit', function (e) {
     const descriptionError = checkErrorValue(description);
 
     if (titleError || imageError || descriptionError) {
-        errForm.style.display = 'block';
-        errText.textContent = "Please complete all imformation!"
+        confirmCtn.style.display = 'block';
+        confirmTitle.textContent = "Error";
+        confirmText.textContent = "Please complete all imformation!";
     } else {
-        errForm.style.display = 'none';
+        confirmCtn.style.display = 'none';
         console.log(title, image, description);
     }
 });
 
 // exit error message
-errForm.addEventListener('click', function () {
-    errForm.style.display = 'none';
+confirmCtn.addEventListener('click', function () {
+    confirmCtn.style.display = 'none';
 });
 
 

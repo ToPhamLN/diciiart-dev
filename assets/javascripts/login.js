@@ -1,5 +1,6 @@
-const errForm = document.getElementById('err_form');
-const errText = document.querySelector('.err_text');
+const confirmCtn = document.getElementById('confirm');
+const confirmTitle = document.querySelector('.confirm_title');
+const confirmText = document.querySelector('.confirm_text');
 const loginForm = document.getElementById('login_form');
 const switchPwd = document.getElementById('switch_pwd');
 
@@ -12,6 +13,12 @@ function checkErrorValue(inputValue) {
     return false;
 }
 
+function showConfirm(a, b) {
+    confirmCtn.style.display = 'block';
+    confirmTitle.textContent = a;
+    confirmText.textContent = b;
+}
+
 loginForm.addEventListener('submit', function (e) {
     e.preventDefault();
     const email = document.getElementById('email').value;
@@ -20,11 +27,9 @@ loginForm.addEventListener('submit', function (e) {
     const emailError = checkErrorValue(email);
     const passwordError = checkErrorValue(password);
     if (emailError && passwordError) {
-        errForm.style.display = 'block';
-        errText.textContent = "Please complete all information!";
+        showConfirm('Error', 'Please complete all information!');
     } else {
-        errForm.style.display = 'none';
-        console.log(email, password);
+        loginForm.submit();
     }
 });
 
@@ -41,6 +46,6 @@ switchPwd.addEventListener('click', function () {
 })
 
 // exit error message
-errForm.addEventListener('click', function () {
-    errForm.style.display = 'none';
+confirmCtn.addEventListener('click', function () {
+    confirmCtn.style.display = 'none';
 })
